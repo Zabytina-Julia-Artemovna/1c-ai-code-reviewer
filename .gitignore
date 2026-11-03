@@ -1,0 +1,16 @@
+.env
+password.env
+*.env
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+*.log
+
+.idea/
+.vscode/
+
+.DS_Store
+Thumbs.db
