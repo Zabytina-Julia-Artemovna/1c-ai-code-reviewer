@@ -50,9 +50,9 @@ except Exception as e:
     print(f" Произошла ошибка: {e}")
 
 def send_email(report_text):
-    sender = "uzabytina9@gmail.com"
+    sender = os.getenv("EMAIL_SENDER")
     password = os.getenv("EMAIL_PASSWORD")
-    recipient = "uzabytina9@gmail.com"
+    recipient = os.getenv("EMAIL_RECIPIENT")
 
     msg = MIMEText(report_text)
     msg['Subject'] = "Результат ИИ-ревью кода 1С"
